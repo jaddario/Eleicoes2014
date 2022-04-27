@@ -1,4 +1,4 @@
-package br.com.addario.eleicoesapi.reader;
+package br.com.addario.eleicoesapi.utils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

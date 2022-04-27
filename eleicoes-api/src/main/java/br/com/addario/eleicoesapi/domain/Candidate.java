@@ -1,6 +1,5 @@
 package br.com.addario.eleicoesapi.domain;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,9 +20,16 @@ public class Candidate {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @Column(name = "PARTY")
     private String party;
+
+    @Column(name = "NAME")
     private String name;
+
+    @Column(name = "VOTES")
     private Integer votes;
+
+    @Column(name = "VOTE_PERCENTAGE")
     private Double votePercentage;
 
     public Candidate from(CandidateDTO dto) {
